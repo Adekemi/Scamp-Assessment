@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Sequence</title>
+</head>
+
+<body>
+    <h1>Fibonacci Series</h1>
+    <script>
+        num = prompt("Enter a number: ");
+        f1 = 0;
+        f2 = 1;
+        document.write(f1 + '<br>');
+        document.write(f2 + '<br>');
+
+        for (i = 2; i <= num; i++) {
+            f3 = f1 + f2;
+            document.write(f3);
+            f1 = f2;
+            f2 = f3;
+            document.write('<br>');
+        }
+        
+    </script>
+    
+</body>
+</html>
